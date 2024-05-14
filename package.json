@@ -1,0 +1,15 @@
+{
+  "name": "automacao-music-pro",
+  "version":"1.0.0",
+   "main":"cypress.config.js",
+   "author":"Danilo Sousa",
+  "scripts":{
+     "cy:open":"cypress open",
+     "test":"cypress run"
+   },
+
+  "devDependencies": {
+        "cypress":"^13.9.0"
+  }
+}
+
