@@ -3,7 +3,7 @@ describe('Teste de Login', () => {
       cy.visit('practice-test-login/')
   })
   
-  it('positiveLoginTest', () => {
+  it('positiveLoginTest', () => { 
       cy.positiveLogInTest()
       cy.url().should('contain', `${Cypress.config('baseUrl')}logged-in-successfully/`)
       cy.get('strong').should('have.text', 'Congratulations student. You successfully logged in!')
