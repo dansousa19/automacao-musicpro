@@ -2,7 +2,7 @@ Cypress.Commands.add('positiveLogInTest', (
     usuario = Cypress.env('Username'),
     senha = Cypress.env('Password')
     ) => {
-    cy.get('#username').type(usuario) //log:false impede que dados não serão inseridos no coonsole
+    cy.get('#username').type(usuario)
     cy.get('#password').type(senha)
     cy.get('#submit').click()
 })

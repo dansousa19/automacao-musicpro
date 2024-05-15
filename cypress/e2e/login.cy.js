@@ -6,7 +6,7 @@ describe('Teste de Login', () => {
   it('positiveLoginTest', () => { 
       cy.positiveLogInTest()
       cy.url().should('contain', `${Cypress.config('baseUrl')}logged-in-successfully/`)
-      cy.get('strong').should('have.text', 'Congratulations student. You successfully logged in!')
+      cy.get('.has-text-align-center').should('have.text', 'Congratulations student. You successfully logged in!')
       cy.get('.wp-block-button__link').should('be.visible')
   })
 
